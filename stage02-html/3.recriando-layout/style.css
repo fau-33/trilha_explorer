@@ -1,11 +1,20 @@
 body {
   font-family: 'Open Sans', sans-serif;
   text-align: center;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
 }
 
 #main {
   width: 626px;
-  margin: auto;
+  margin: 64px auto 32px;
+}
+
+#main img {
+  margin-bottom: 32px;
 }
 
 h1 {
@@ -13,6 +22,7 @@ h1 {
   font-size: 32px;
   line-height: 40px;
   font-weight: 500;
+  margin-bottom: 16px;
 }
 
 h1 span {
@@ -29,4 +39,26 @@ p {
 strong, a {
   color: #3F3D56;
   font-size: 15px;
+}
+
+#footer {
+  font-size: 15px;
+}
+
+#footer a + a {
+  margin-left: 42px;
+}
+
+#line {
+  width: 391px;
+  height: 0px;
+  border: 1px solid #ECEFF2;
+  margin: 0 auto 16px;
+}
+
+#wave {
+  width: 100%;
+  height: auto;
+  background-position: center;
+  margin-top: 40px;
 }
