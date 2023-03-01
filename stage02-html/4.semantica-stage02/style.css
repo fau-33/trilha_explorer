@@ -45,17 +45,17 @@ ul li a:hover {
 }
 
 ul,
-.title {
+h1 {
   font-family: "Mulish", sans-serif;
 }
 
-.main {
+main {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.title {
+h1 {
   font-size: 49px;
   line-height: 56px;
   color: #1f1534;
@@ -65,12 +65,12 @@ ul,
   width: 490px;
 }
 
-.title span {
+h1 span {
   color: #89c5cc;
   font-weight: bold;
 }
 
-.subtitle {
+p {
   font-size: 14px;
   line-height: 28px;
   color: #7d7987;
@@ -78,7 +78,7 @@ ul,
   margin: 40px 0;
 }
 
-.button {
+button {
   color: white;
   text-transform: uppercase;
   font-family: "Open Sans", sans-serif;
@@ -97,7 +97,7 @@ ul,
   cursor: pointer;
 }
 
-.footer {
+footer {
   font-size: 14px;
   line-height: 28px;
 
@@ -106,7 +106,7 @@ ul,
   margin-top: 80px;
 }
 
-.footer a {
+footer a {
   font-weight: bold;
 }
 
