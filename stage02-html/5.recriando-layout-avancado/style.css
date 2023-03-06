@@ -1,0 +1,40 @@
+body {
+  background-color: #2C2B3D;
+  font-family: 'JetBrains Mono', monospace;
+
+}
+
+.page {
+  width: 1000px;
+  margin: 0 auto;
+  padding-top: 71px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 101px;
+
+}
+
+ul {
+  display: flex;
+  gap: 64px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #FFF;
+}
+
+
+
+p {
+  font-family: 'Open Sans', sans-serif;
+}
