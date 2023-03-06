@@ -1,4 +1,5 @@
 body {
+  margin: 0;
   background-color: #2C2B3D;
   font-family: 'JetBrains Mono', monospace;
 
@@ -14,7 +15,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 101px;
+  margin-bottom: 107px;
 
 }
 
@@ -37,4 +38,33 @@ ul li {
 
 p {
   font-family: 'Open Sans', sans-serif;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+section {
+  margin-left: 72px;
+}
+
+h1 {
+  color: #FFF;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  margin-bottom: 62px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.green-title {
+  color: #00BFA6;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
 }
