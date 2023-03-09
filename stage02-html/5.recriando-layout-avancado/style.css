@@ -1,4 +1,5 @@
 body {
+  padding: 0;
   margin: 0;
   background-color: #2C2B3D;
   font-family: 'JetBrains Mono', monospace;
@@ -37,7 +38,13 @@ ul li {
 
 
 p {
+  color: #C2C2C2;
   font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
 }
 
 main {
@@ -67,4 +74,35 @@ h1 {
   font-weight: 700;
   font-size: 36px;
   line-height: 40px;
+}
+
+.green-paragrafo {
+  color: #00BFA6;  
+
+}
+
+span {
+  font-weight: 700;
+}
+
+footer {
+  margin-top: 150px;
+  margin-bottom: 23px;
+  text-align: center;
+  color: #FFF;
+}
+
+
+#line {
+  width: 568px;
+  border: 1px solid #00BFA6;
+  margin: 0 auto;
+  margin-bottom: 27px;
+}
+
+#padlock {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  
 }
