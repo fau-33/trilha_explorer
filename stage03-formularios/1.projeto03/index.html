@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pT-Br">
-  <head>
+
+<head>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -9,7 +10,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Crie o seu evento</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700&family=Poppins&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700&family=Poppins&display=swap"
+    rel="stylesheet">
+
 <body>
   <div class="page">
     <header>
@@ -19,13 +22,28 @@
     </header>
     <form>
       <fieldset>
-        <legend>Informações do Evento</legend>
-        <div class="input-wrapper">
-          <label for="event-title">Título do evento<span>(mínimo 8 caracteres)</span></label>
-          <input type="text" id="event-title"/>
+        <div class="fieldset-wrapper">
+          <legend>Informações do Evento</legend>
+          <div class="input-wrapper">
+            <label for="event-title">Título do evento<span>(mínimo 8 caracteres)</span></label>
+            <input type="text" id="event-title" />
+          </div>
+          <div class="input-wrapper">
+            <label for="event-link">Link do evento<span>(comece com https://)</span></label>
+            <input type="url" id="event-link" />
+          </div>
+          <div class="input-wrapper">
+            <label for="event-whatsapp">Whatsapp para contato<span>(somente números)</span></label>
+            <input type="number" id="event-whatsapp" />
+          </div>
+          <div class="input-wrapper">
+            <label for="event-info">Informações  extras</label>
+            <textarea id="event-info"></textarea>
+          </div>
         </div>
       </fieldset>
     </form>
   </div>
 </body>
+
 </html>
