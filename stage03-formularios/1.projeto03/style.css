@@ -104,7 +104,8 @@ fieldset legend {
 }
 
 .input-wrapper input,
-.input-wrapper textarea {
+.input-wrapper textarea,
+.input-wrapper select {
   padding: 0 24px;
   height: 56px;
   background: #FAFAFC;
@@ -119,4 +120,8 @@ fieldset legend {
 .input-wrapper textarea {
   padding: 0;
   height: 169px;
+}
+
+.input-wrapper select {
+  appearance: none;
 }
