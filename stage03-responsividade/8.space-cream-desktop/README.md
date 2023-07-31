@@ -2,7 +2,7 @@
 
 > Desafio proposto no Stage 03 do Explorer da Rocketseat
 
-![Screenshot](./.github/preview.jpg)
+![Screenshot](./.github/preview.png)
 
 Este projeto é um site chamado "Space Cream" que apresenta informações sobre uma marca fictícia de sorvetes. O site possui duas versões, uma para desktop e outra para dispositivos móveis (mobile-first).
 
