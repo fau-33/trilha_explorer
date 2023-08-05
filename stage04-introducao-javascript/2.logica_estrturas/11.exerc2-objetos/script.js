@@ -32,6 +32,25 @@ const students = [
 function calculateAverage (gradeFirst, gradeSecond) {
     const gradeAverage = (gradeFirst + gradeSecond) / 2;
     return gradeAverage;
-}
+};
 
-alert(calculateAverage());
+function verifyApproval (average) {
+    if (average >= 7) {
+        return "aprovado";
+    } else {
+        return "reprovado";
+    }
+};
+
+for (const student of students) {
+    const average = calculateAverage(student.gradeFirst, student.gradeSecond);
+    const situation = verifyApproval(average);
+
+    if (situation === "Aprovado") {
+        const message = `A média do(a) aluno(a) ${student.name} é ${average.toFixed(2)}.\n Parabéns, ${student.name}! Você foi ${situation} no concurso.`;
+        alert(message);
+    } else {
+        const message = `A média do(a) aluno(a) ${student.name} é ${average.toFixed(2)}.\n Não foi dessa vez, ${student.name}. Tente novamente!`;
+        alert(message);
+    }
+}
