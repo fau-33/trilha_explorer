@@ -8,11 +8,8 @@ let xAttempts = 1;
 // Eventos
 btnTry.addEventListener("click", handleTryClick);
 btnReset.addEventListener("click", handleResetClick);
-document.addEventListener('keydown', function(e) {
-    if(e.key == 'Enter' && screen1.classList.contains('hide')) {
-        handleResetClick();
-    }
-});
+document.addEventListener('keydown', enterKeyPressAfterHideScreen);
+
 
 // Funções
 function handleTryClick(event) {
@@ -20,12 +17,16 @@ function handleTryClick(event) {
 
   const inputNumber = document.querySelector("#inputNumber");
 
-  if (Number(inputNumber.value) == randomNumber) {
-    toggleScreen();
+  const inputValue = Number(inputNumber.value);
 
-    screen2.querySelector(
-      "h2"
-    ).innerText = `Acertou em ${xAttempts} tentativas`;
+  if (isNaN(inputValue) || inputValue < 0) {
+    alert("Por favor, insira um número positivo válido.");
+    return;
+  }
+
+  if (inputValue === randomNumber) {
+    toggleScreen();
+    screen2.querySelector("h2").innerText = `Acertou em ${xAttempts} tentativas`;
   }
 
   inputNumber.value = "";
@@ -42,3 +43,11 @@ function toggleScreen() {
   screen1.classList.toggle("hide");
   screen2.classList.toggle("hide");
 };
+
+function enterKeyPressAfterHideScreen(e) {
+    if(e.key == 'Enter' && screen1.classList.contains('hide')) {
+        handleResetClick();
+    }
+};
+
+
