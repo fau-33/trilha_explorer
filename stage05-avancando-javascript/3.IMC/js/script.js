@@ -7,6 +7,8 @@ const form = document.querySelector('form');
 const inputWeight = document.querySelector('#weight');
 const inputHeight = document.querySelector('#height');
 
+inputWeight.onInput = () => AlertError.close()
+inputHeight.onInput = () => AlertError.close()
 
 form.onsubmit = (event) => {
     event.preventDefault();
