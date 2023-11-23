@@ -4,7 +4,7 @@ const AppError = require("./utils/AppError");
 const express = require("express");
 
 const routes  = require("./routes");
-
+// testando
 migrationsRun();
 
 const app = express();
